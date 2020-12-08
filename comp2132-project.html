@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COMP 2132 Project - Dice</title>
+    <link rel="stylesheet" href="styles/styles.css">
+   
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h2>COMP 2132 Project</h1>
+            <h3>Dice game - A01060272</h3>
+        </header>
+        <main>         
+           <div class="wrapper">
+            <table style="width:100%" id="table-game">
+                <tr>
+                  <th colspan="6">Player: You</th>
+                  <th colspan="6">Player: Computer</th>
+                </tr>
+
+                <tr>
+                  <td colspan="6">Total score</td>
+                  <td colspan="6">Total score</td>
+                </tr>
+                <tr id="tr-score">
+                  <td colspan="6"><p id="p-total-score"><b>0</b></p></td>
+                  <td colspan="6"><p id="c-total-score"><b>0</b></p></td>
+                </tr>
+
+                <tr id="tr-dice">
+                  <td id="td-dice1" colspan="3"><img id="td-dice1-image" src="images/dice_1.png"></td>
+                  <td id="td-dice2" colspan="3"><img id="td-dice2-image" src="images/dice_1.png"></td>
+                  <td id="td-dice3" colspan="3"><img id="td-dice3-image" src="images/dice_1.png"></td>
+                  <td id="td-dice4" colspan="3"><img id="td-dice4-image" src="images/dice_1.png"></td>
+                </tr>
+                <tr>
+                  <td colspan="6">Current score</td>
+                  <td colspan="6">Current score</td>
+                </tr>
+                 
+                <tr id="tr-score">
+                  <td colspan="6"><p id="p-score" colspan="2"><b>0</b></p></td>
+                  <td colspan="6"><p id="c-score" colspan="2"><b>0</b></p></td>
+                </tr>
+
+                  <tr>
+                    <th colspan="6"><button id="btn-roll">Roll Dice</button></th>
+                    <th colspan="6"><button id="btn-newgame">New Game</button></th>
+                  </tr>
+
+              </table>
+              </div>
+              <section>
+                <div id="flip">Instruction (please click to see)</div>
+                <div id="panel">
+              This is a really funny game：<br/>
+              Click the botton "Roll Dice" to start the game.<br/>
+              If any of two dice comes up a 1, then the score for the round get 0.<br/>
+              If rolls a pair of same numbers, then the score is double of the total of the two dice.<br/>
+              Any other combination, the score is the sum of two dice.<br/>
+              The game is over after 3 times of roll dice. The game will restart after that<br/>
+              You can also click the button "New Game" anytime if you want to restart the game.<br/>
+    
+              </div>
+            </section>
+
+             <section id="pop-up">
+              <h4>Game is over, the result...</h2>
+              <button id="btn-close">&#10005;</button>
+              <p id="pop-up-message"></p>
+            </section>
+        </main>    
+      </div>
+    </div>
+
+
+    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/comp2132-project.js"></script>
+</body>
+</html>
